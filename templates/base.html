@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question Landing Page</title>
+</head>
+
+<body>
+    <div>
+        {{ title }}
+    </div>
+    <div>
+        {{ instruction }}
+
+
+    </div>
+    <div>
+        <!-- <form action="/questions/0" method="GET">
+        <ul>
+            {% for question in questions %}
+            <li>{{ question.question }}</li>
+            {% endfor %}
+        </ul>
+        <input type="button" value="Submit">
+        </form> -->
+
+        <form action="/question/0">
+         <button>Submit</button>
+        </form>
+    </div>
+
+    <!-- title, survey, instruction, button -->
+
+</body>
+
+</html>

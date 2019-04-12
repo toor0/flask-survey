@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select Survey</title>
+</head>
+<body>
+
+    <div>
+        <h1>Please Select your Survey</h1>
+    </div>
+    <div>
+
+        <form action="/start" method="GET">
+            {% for survey in surveys.keys() %}
+            <input type="radio" name="survey" value="{{ survey }}"> {{ survey.capitalize() }} <br>
+            {% endfor %}
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
